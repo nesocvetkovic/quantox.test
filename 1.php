@@ -1,6 +1,6 @@
 <?php
 require("dbconnect.php");
-Menjao sam ovo
+
 $student = isset($_GET['student'])&&is_numeric($_GET['student'])?$_GET['student']:0;
 $q = mysqli_query($conn,"SELECT * FROM students where id = $student");
 while ($rw = mysqli_fetch_object($q)) {
